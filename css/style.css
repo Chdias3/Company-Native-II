@@ -1,0 +1,995 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*é rolagem suave.. quando clica no conteudo do menu ele rola a pagina de modo suave*/
+}
+
+:root {
+  --green: #50a23d;
+  --black: #000000;
+  --grey: #9C9595;
+
+  /* -----fonts -----*/
+  --body-font: 'Poppins', sans-serif;
+  --marck: 'Marck Script', sans-serif;
+  --sans: 'DM Sans', sans-serif;
+}
+
+/* Body --------------------------------- */
+html {
+  margin-left: -2rem;
+}
+
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  max-height: 1787px;
+}
+
+main {
+  overflow: hidden;
+  /*para não deixar o conteudo vazar na tela */
+  width: 100%;
+  height: 1311px;
+}
+
+/* Header --------------------------------- */
+#header {
+  height: 89px;
+}
+
+header .boxHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background: white;
+  height: 8.21rem;
+}
+
+/* imgLogo */
+header .logo {
+  margin-left: 2.3rem;
+  margin-top: -2.6rem;
+
+}
+
+header .imgLogo {
+  position: relative;
+  top: -0.12rem;
+  width: 10.9375rem;
+  height: 10.5rem;
+  padding-top: 0.6rem;
+}
+
+/* imgSearche */
+header .search {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+header .imgSearch {
+  position: relative;
+  right: 3.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  top: -10.4rem;
+  transition: 0.3s;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  background: #ffffff00;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
+  font-weight: bold;
+  font-size: 18px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+
+
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  /* transition: 0.6s ease; */
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+
+
+img.imgSearch:hover {
+  transform: translateY(-4px);
+}
+
+header .buttonSearch {
+  position: relative;
+  z-index: 120;
+  margin-right: 46.6rem;
+  border: none;
+  cursor: pointer;
+  background: #ffffff00;
+  margin-top: -43px;
+}
+
+button.buttonSearch:hover {
+  background: #ffffff00;
+}
+
+header input {
+  position: fixed;
+  margin-left: -17.7rem;
+  height: 2.2rem;
+  width: 17rem;
+  border: none;
+  background: #ababab33;
+  font-family: var(--marck);
+  margin-top: -48px;
+  font-size: 1rem;
+  z-index: 110;
+}
+
+input::placeholder {
+  font-family: var(--marck);
+  font-size: 1rem;
+  padding: -0.2rem;
+  margin-left: -2rem;
+}
+
+
+/* menu */
+nav.boxMenu {
+  position: relative;
+  top: -0.6rem;
+}
+
+nav .menu li a {
+  display: block;
+  padding: 0.5rem;
+  top: 7px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav .menu {
+  background: #50a23d;
+  width: 102%;
+  height: 52px;
+  position: fixed;
+  z-index: 140;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 44px;
+}
+
+/* Traço */
+nav ul li a {
+  transition: color 0.3s;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 16px;
+
+  bottom: -0.3rem;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/*largura do tracinho quando fizer o hover e tambem quando estiver ativo*/
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 67%;
+}
+
+
+/* linha */
+.divider-1 {
+  position: relative;
+  top: 8.3rem;
+  height: 4px;
+  background: #ababab33;
+  width: 1396px;
+}
+
+.divider-1 {
+  position: fixed;
+  z-index: 50;
+}
+
+.divider-2 {
+  position: relative;
+  height: 3px;
+  top: 9rem;
+  background: #ababab33;
+  width: 1386px;
+}
+
+
+/* Vetor para promoção */
+/* promotion */
+.promotion1 {
+  position: relative;
+  top: -25.1rem;
+  left: -11rem;
+}
+
+.promotion2 {
+  position: relative;
+  top: -28.594rem;
+  left: -12.4rem;
+}
+
+.promotion3 {
+  position: relative;
+  top: -21.7rem;
+  left: -20.3rem;
+}
+
+.promotion4 {
+  position: relative;
+  top: -24.7rem;
+  left: -20.9rem;
+}
+
+
+.promotion5 {
+  position: relative;
+  top: -26.9rem;
+  left: -21.6rem;
+}
+
+/* marckDescrip */
+.marckDescrip {
+  font-family: var(--marck);
+  margin-right: 40rem;
+  position: relative;
+  top: 1rem;
+  width: 29%;
+  left: 86%;
+  font-size: 36px;
+  color: #205214;
+}
+
+/* pagination */
+p.number1 {
+  position: relative;
+  left: 40.3rem;
+  margin-right: 83rem;
+  top: -1.8rem;
+}
+
+p.number2 {
+  position: relative;
+  left: 42.8rem;
+  margin-right: 83rem;
+  top: -2.98rem;
+}
+
+p.number3 {
+  position: relative;
+  left: 45.3rem;
+  margin-right: 83rem;
+  top: -4.2rem;
+}
+
+
+/* saction production */
+/* CSS FLEXBOX 1 */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  /*vou indicar que ele pode quebrar entao quebra quando diminue a tela*/
+  max-width: 800px;
+  /* margin: 0 auto; para alinhar ao centro quando passar dos 800 */
+  /* margin-left: 1.3rem; */
+  margin-left: 1.5%;
+  margin-top: 11rem;
+}
+
+.flex>div {
+  flex: 1 1 200px;
+  /*flex: 1 quero que ele se expanda /  flex: 1 1 quero que ele fique menor / flex: 1 1 200px; quero que ele tenha essa base de 200px sempre se nao tiver ele quebra*/
+  margin: 33px;
+  /*vai dar uma margin entre eles em todos os lados*/
+}
+
+
+/* Posicionamento dos produtos */
+button.carrinho {
+  font-family: var(--body-font);
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #50a23d;
+  width: 120px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+  left: 5rem;
+}
+
+button:hover {
+  background: #41c023c2;
+}
+
+.specify1 {
+  position: relative;
+  left: -16.66rem;
+  top: 0rem;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+.specify2 {
+  position: relative;
+  top: -16.56rem;
+  left: 16.78rem;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+.specify3 {
+  position: relative;
+  left: 0rem;
+  top: -10.98rem;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+.specify4 {
+  position: relative;
+  left: -16.67rem;
+  top: -11rem;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+.specify5 {
+  position: relative;
+  top: -27.59rem;
+  left: 16.8rem;
+  margin-right: 35.3rem;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+.description1 {
+  position: relative;
+  top: 13rem;
+  left: -16.8rem;
+}
+
+.description2 {
+  position: relative;
+  top: -3.56rem;
+  left: 16.6rem;
+}
+
+.description3 {
+  position: relative;
+  top: -3.56rem;
+  left: 0rem;
+}
+
+.description4 {
+  position: relative;
+  top: 2rem;
+  left: -16.9rem;
+}
+
+.description5 {
+  position: relative;
+  top: -14.56rem;
+  left: 16.5rem;
+}
+
+.description6 {
+  position: relative;
+  top: -14.56rem;
+  left: 0rem;
+}
+
+
+/* Formulario de contato */
+/* divForm */
+.formDescription {
+  position: relative;
+  background: black;
+  top: -64.2rem;
+  left: 62%;
+  width: 37%;
+  height: 247px;
+  border-radius: 8px;
+  background: #50a23d;
+}
+
+.divForm {
+  position: relative;
+  width: 100%;
+  height: 247px;
+  top: 7.1rem;
+  border-radius: 8px;
+  border: 2px solid #50a23d93;
+  background-color: white;
+  box-shadow: inset 0px 2px 5px -2px #000000;
+  box-shadow: 1px solid aquamarine;
+}
+
+h1.ofertas {
+  font-family: var(--marck);
+  font-size: 36px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 45px;
+  margin-left: 125px;
+}
+
+h1 {
+  position: relative;
+  top: 46px;
+}
+
+.descriptionForm {
+  font-family: var(--marck);
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-left: 102px;
+
+}
+
+p.descriptionForm {
+  position: relative;
+  top: 46px;
+
+  margin-top: 31px;
+  width: 357px;
+}
+
+/* form */
+input.nameForm {
+  position: absolute;
+  margin-top: 68px;
+  margin-left: 94px;
+  width: 63%;
+  height: 31px;
+  background: #ababab33;
+  border: none;
+}
+
+input.emailForm {
+  margin-left: 52%;
+  position: absolute;
+  background: #ababab33;
+  border: none;
+  height: 31px;
+  width: 150px;
+  margin-top: 112px;
+}
+
+img.imgSuccess.iconE {
+  position: absolute;
+  top: 4.5rem;
+  left: 0.1rem;
+  margin-top: 5rem;
+  position: absolute;
+}
+
+input.cellphoneForm {
+  position: absolute;
+  top: 8.7rem;
+  margin-left: 94px;
+  width: 156px;
+  height: 31px;
+  background: #ababab33;
+  border: none;
+}
+
+label {
+  font-family: var(--marck);
+  font-size: 16px;
+  color: #000000;
+}
+
+label.name {
+  position: absolute;
+  left: 95px;
+  top: 3.2rem;
+}
+
+label.email {
+  position: absolute;
+  left: 264px;
+  top: 7.6rem;
+}
+
+label.cellphone {
+  position: absolute;
+  left: 96px;
+  top: 7.7rem;
+}
+
+button.buttonSend {
+  font-family: var(--marck);
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  background: #41c023c2;
+  border: none;
+  margin-left: 91px;
+  width: 320px;
+  height: 31px;
+  border-radius: 8px;
+  top: 12.3rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.buttonSend:hover {
+  background: #41c023d1;
+}
+
+del {
+  color: #877B7B;
+}
+
+h2.valor {
+  font-weight: bold;
+  font-size: 16px;
+  color: #877B7B;
+  width: 69px;
+  position: relative;
+  left: 7.7rem;
+  top: 1rem;
+}
+
+p.legend {
+  position: relative;
+  left: 3rem;
+
+  font-family: var(--);
+}
+
+/* msg erro  metodo 1 */
+/* .msg-erro{
+  position: absolute;
+  color: red;
+  font-size: 11px;
+  margin-left: 6rem;
+}
+
+.msg-error{
+  position: absolute;
+  color: red;
+  font-size: 11px;
+  margin-top: 0rem;
+  margin-left: 17rem;
+} */
+
+/* msg erro  metodo 2 */
+.controlError.success input {
+  border: 2px solid #4eca64;
+  position: absolute;
+  top: 0rem;
+}
+
+.controlError.success i .imgSuccess {
+  visibility: visible;
+  height: 1rem;
+  margin-top: 4.7rem;
+  position: absolute;
+  margin-left: 24.4rem;
+  /* top: 13rem; */
+}
+
+.controlError.error input {
+  border: 2px solid #db5a5a;
+  position: absolute;
+  top: 0rem;
+}
+
+input#formEmail {
+  top: 1.7rem;
+}
+
+.controlError.error i .imgError {
+  visibility: visible;
+  height: 1rem;
+  position: absolute;
+  margin-left: 23.2rem;
+  top: 4.7rem;
+}
+
+img.imgError.icon {
+  position: absolute;
+  margin-top: 4.5rem;
+  left: 1.3rem;
+}
+
+.controlError.error small {
+  position: absolute;
+  white-space: nowrap;
+  visibility: visible;
+  color: #db5a5a;
+  margin-top: 4.2rem;
+  font-size: 12px;
+  /* margin-left: 1rem; */
+  display: flex;
+  padding: 0px 94px;
+}
+
+small.smallPosition {
+  position: absolute;
+  margin-top: 7.2rem;
+  margin-left: 10.8rem;
+  top: 6.3rem;
+}
+
+.controlError small {
+  visibility: hidden;
+}
+
+.controlError i {
+  visibility: hidden;
+}
+
+/* Sombra nas caixas das imagens  */
+.boxImg {
+  position: relative;
+  overflow: hidden;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+img.imgTranslater {
+
+  transition: .5s ease-in-out;
+  transition: 0.3s;
+  z-index: 10;
+
+  border: 2px solid #50a23d93;
+  border-radius: 4px;
+  box-shadow: -2px 48px 56px -41px rgb(0 0 0 / 37%);
+}
+
+/* efeito de rotação na imagem  */
+img.imgTranslater:hover {
+  transform: translateY(-8px);
+  transform: scale(2) rotate(45deg);
+}
+
+/* Vetor da promoção do produto */
+img.vetorOne {
+  position: relative;
+  top: -80.69rem;
+  left: 2.532rem;
+}
+
+img.vetorTwo {
+  position: relative;
+  top: -84.1rem;
+  left: 1.117rem;
+  z-index: -1;
+}
+
+img.vetorThree {
+  position: relative;
+  top: -77.3rem;
+  left: -6.75rem;
+}
+
+img.percentage {
+  position: relative;
+  top: -82.7rem;
+  left: -4.55rem;
+}
+
+img.promotion {
+  position: relative;
+  top: -80.6rem;
+  left: -8.9rem;
+}
+
+
+/* footer */
+footer {
+  overflow: hidden;
+  background: #50a23d;
+  width: 1381px;
+  height: 372px;
+}
+
+/* logo footer */
+img.imgLogo {
+  width: 10.9375rem;
+}
+
+a.logo {
+  margin-left: 2.2rem;
+  margin-top: -2.6rem;
+}
+
+/* contact */
+.contact {
+
+  margin-left: 4.16rem;
+  margin-top: 44px;
+
+}
+
+li {
+  font-family: var(--sans);
+  display: flex;
+}
+
+img.cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+p.subtitle {
+  font-family: var(--sans);
+  font-size: 16px;
+  margin-left: 4.16rem;
+  margin-top: 50px;
+  color: black;
+}
+
+/* information */
+.information {
+
+  position: relative;
+  top: -18rem;
+  left: 42%;
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 17px;
+  position: relative;
+  top: 0.4rem;
+}
+
+ul.info {
+
+  position: relative;
+  top: 20px;
+}
+
+li {
+  font-family: var(--sans);
+  display: flex;
+  color: #000000;
+}
+
+/* shop */
+.shop {
+  position: relative;
+  top: -26.1rem;
+  left: 84%;
+}
+
+h3.shopTitle {
+  font-family: var(--sans);
+  font-size: 17px;
+  position: relative;
+  top: -0.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+ul.shopping {
+  position: relative;
+  top: 8.3px;
+}
+
+/* seta */
+/*img da setinha*/
+.back-to-top {
+  background: #50a23d;
+
+
+  position: fixed;
+  /*fica fixo na pagina*/
+  right: 1rem;
+  bottom: 1rem;
+
+
+  clip-path: circle();
+  /*arredonda ou cria um circulo em volta da seta*/
+  font-size: 1.5rem;
+  /*tamanho da fonte*/
+  line-height: 0;
+  /*tira qualquer tipo de linha*/
+  visibility: hidden;
+  /*esconde a seta*/
+  opacity: 0;
+
+  transition: 0.3s;
+  /*suavidade*/
+  transform: translateY(100%);
+  /*o 100% é o movimento.. transform é propriedade que aceita muitas outras.. translate serve para mexer no eixo x e y e quero o y que é o eixo vertical porque quero trazelo de baixo para cima*/
+}
+
+h3.info {
+  font-size: 17px;
+  color: black;
+  font-family: var(--sans);
+  font-weight: bold;
+}
+
+.back-to-top.show {
+  visibility: visible;
+  /* background:rgba(0, 0, 0, 0.7); */
+  opacity: 1;
+  transform: translateY(0);
+  /*posição inicial dele*/
+}
+
+.back-to-top.show:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+img.moveSet {
+  height: 40px;
+  transition: 0.3s;
+}
+
+/* img.moveSet:hover { */
+/* filter: drop-shadow(2px 4px 6px black); */
+/* background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-8px); */
+/* } */
+
+/* exibir dicas de ferramentas */
+/* search */
+[data-tooltip] {
+  position: relative;
+}
+
+/* AFTER criar elementos gráficos, efeitos especiais */
+[data-tooltip]:after {
+  display: none;
+  /*exconde o texto e so aparece quando passar o mause em cima*/
+  position: absolute;
+  top: -33px;
+  z-index: 60;
+  padding: 5px;
+  border-radius: 3px;
+  /* left: calc(100% + 2px); 2px é o espaço entre os elementos em direção a esquerda e 100% é o left */
+
+  content: attr(data-tooltip);
+  /*O titleatributo é útil para exibir dicas de ferramentas de texto simples, mas você não pode alterar nenhum dos estilos de dicas de ferramentas "virtuais". Você pode substituir essas dicas de ferramentas usando um data-tooltipatributo e um pouco de CSS:*/
+
+  white-space: nowrap;
+  /*inicialmente pensado para simplesmente remover as quebras de linha no texto*/
+  background-color: #254f208f;
+  border: 1px solid #133714;
+  color: White;
+}
+
+[data-tooltip]:hover:after {
+  display: block;
+}
+
+
+
+
+
+.carousel {
+  position: relative;
+  margin-left: 64px;
+  top: 70px;
+  width: 93%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
+}
+
+.carousel-control-prev {
+  left: 0px;
+  width: 3%;
+  top: 10rem;
+  left: 0;
+}
+
+/* .carousel-inner {
+  position: relative;
+  width: 98%;
+  overflow: hidden;
+} */
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+  -webkit-appearance: button;
+  width: 3%;
+  top: 10rem;
+  height: 14%;
+  border: none;
+}
+
+button.carousel-control-next {
+  position: absolute;
+  margin-left: 72.8rem;
+  height: 14%;
+}
+
+.w-100 {
+  width: 98% !important;
+}
+

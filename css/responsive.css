@@ -1,0 +1,551 @@
+@media (min-width: 1100px) and (max-width: 1335px) {
+  .description3 {
+    top: 41.44rem;
+    left: -33.5rem;
+  }
+
+  .specify2 {
+
+    top: 28.44rem;
+    left: -16.7rem;
+
+  }
+
+  .specify5 {
+
+    top: -4.59rem;
+    left: 0rem;
+    margin-right: 35.3rem;
+
+  }
+
+  .description6 {
+
+    top: 8.44rem;
+    left: -16.8rem;
+  }
+
+  .marckDescrip {
+   
+    width: 50%;
+    left: 72%;
+    
+}
+
+  .formDescription {
+
+    top: -64.2rem;
+    left: 58%;
+    width: 37%;
+    height: 247px;
+
+  }
+
+  .descriptionForm {
+
+    font-size: 24px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin-left: 10%;
+  }
+
+  input.nameForm {
+    margin-left: 15%;
+    width: 73%;
+
+  }
+
+
+  button.buttonSend {
+    margin-left: 15%;
+    width: 73%;
+  }
+
+  input.cellphoneForm {
+    margin-left: 15%;
+    width: 35%;
+  }
+
+  input.emailForm {
+    margin-left: 53%;
+    width: 35%;
+  }
+
+  .button.cancel {
+
+    font-size: 118%;
+
+    height: 50px;
+
+
+    left: 34rem;
+    top: -39.2rem;
+  }
+
+  main {
+
+    height: 1631px;
+  }
+}
+
+
+@media (min-width: 825px) and (max-width: 1100px){
+
+.formDescription {
+  top: -84.2rem;
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 43%;
+  height: 281px;
+}
+
+.divForm{
+  
+  width: 100%;
+  height: 284px;
+  left: 116%;
+  top: -11.7rem;
+}
+
+
+.descriptionForm {
+
+  font-size: 24px;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: hidden;
+  margin-left: 10%;
+}
+
+input.nameForm {
+  margin-left: 15%;
+  width: 73%;
+
+}
+
+
+button.buttonSend {
+  margin-left: 15%;
+  width: 73%;
+}
+
+input.cellphoneForm {
+  margin-left: 15%;
+  width: 35%;
+}
+
+input.emailForm {
+  margin-left: 53%;
+  width: 35%;
+}
+
+.button.cancel {
+
+  font-size: 118%;
+
+  height: 50px;
+
+
+  left: 28rem!important;
+  top: -39.2rem;
+}
+
+[type=reset], [type=submit], button, html [type=button]{
+  top: 9rem;
+  margin-right: 4%;
+}
+
+header .imgSearch{
+  
+  top: -9.4rem;
+
+}
+
+main {
+  height: 1573px;
+}
+
+.w-100{
+  height: 21rem;
+}
+
+.carousel-inner{
+  width: 96%!important;
+}
+
+img.vetorOne {
+  position: relative;
+  top: -82.69rem;
+  left: 2.1rem;
+}
+
+img.vetorTwo {
+  position: relative;
+  top: -86.1rem;
+  left: 0.8rem;
+  z-index: -1;
+}
+
+img.vetorThree {
+  position: relative;
+  top: -79.3rem;
+  left: -7.1rem;
+}
+
+img.percentage {
+  position: relative;
+  top: -84.9rem;
+  left: -4.55rem;
+}
+
+img.promotion {
+  position: relative;
+  top: -82.7rem;
+  left: -8.9rem;
+}
+
+h1.ofertas{
+  margin-left: 13%;
+}
+
+p.descriptionForm{
+  margin-top: 46px;
+      width: 88%;
+}
+
+.modal6 img {
+  width: 672%;
+  padding: 0rem 5rem;
+  height: 36rem;
+
+  border-radius: 8px;
+}
+
+.modal6{
+  padding: 2.4rem 19rem!important;
+}
+
+.flex{
+  margin-top: 31rem;
+}
+}
+
+
+@media (min-width: 651px) and (max-width: 825px){
+  .w-100 {
+    height: 19rem;
+}
+
+.formDescription {
+  top: -119.2rem;
+  width: 84%;
+  left: 12%;
+  height: 237px;
+}
+
+header .imgSearch {
+ 
+
+  top: -8.4rem;
+  
+}
+
+img.vetorOne {
+  position: relative;
+  top: -98.69rem;
+  left: 7.99rem;
+}
+
+button.buttonSend {
+
+  width: 63%;
+ 
+}
+
+input.emailForm {
+ 
+  width: 25%;
+  
+}
+
+label.email {
+
+  left: 52%;
+  
+}
+
+img.vetorTwo {
+  position: relative;
+  top: -102.1rem;
+  left: 6.63rem;
+  z-index: -1;
+}
+
+img.vetorThree {
+  position: relative;
+  top: -95.3rem;
+  left: -1.2rem;
+}
+
+img.percentage {
+  position: relative;
+  top: -100.7rem;
+  left: 1rem;
+}
+
+img.promotion {
+  position: relative;
+  top: -98.6rem;
+  left: -3.2rem;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+ 
+  top: 8rem;
+
+}
+
+button.carousel-control-next {
+  margin-right: 0.8%;
+}
+
+.boxImg {
+
+  left: 3%;
+  top: -8.23rem;
+  margin-right: 6%!important;
+
+}
+
+.flex {
+  max-width: 67%;
+  margin-top: 59rem;
+  margin-left: 15.5%;
+}
+
+main {
+  height: 2232px;
+}
+
+.specify1 {
+  left: 0.99rem;
+  top: 3rem;
+}
+
+.description1 {
+  top: 4.8rem;
+  left: -49%;
+}
+
+.description2 {
+  top: 16.1rem;
+  left: -49%;
+}
+
+.specify2 {
+  top: -33.1rem;
+  left: 57%;
+}
+
+.description3 {
+  top: -20.1rem;
+  left: 5%;
+}
+
+.specify4 {
+  left: 58%;
+  top: -34.3rem;
+}
+
+.description5 {
+  top: -21.22rem;
+  left: 5%;
+}
+
+
+.specify5 {
+  top: -23.23rem;
+  left: 58%;
+}
+
+.specify3 {
+  left: 1rem;
+  top: 1.6rem;
+}
+
+.description4 {
+  top: 14.8rem;
+  left: -49%;
+}
+
+.description6 {
+  top: -10.1rem;
+  left: 5%;
+}
+
+.flex>div{
+  margin: 0px;
+}
+}
+
+@media (min-width: 500px) and (max-width: 651px){
+  .carousel-inner{
+    width: 93%!important;
+  }
+
+  .w-100 {
+   
+    height: 17rem;
+}
+
+.formDescription {
+  top: -201.2rem;
+  left: 7.7%;
+  width: 90.5%;
+}
+
+.flex {
+
+  margin-top: 47rem;
+}
+
+img.imgTranslater {
+  height: 18rem;
+}
+
+.boxImg {
+  top: 3rem;
+  left: 32%;
+  height: 18rem!important;
+}
+
+.flex>div{
+  flex: 1 1 287px;
+  margin: 0px 0px 0px -78px;
+}
+
+main {
+  height: 3936px;
+}
+
+.specify1 {
+  
+  margin-top: 12rem!important;
+
+}
+
+.specify2 {
+
+  margin-top: 12rem!important;
+
+}
+
+.specify3 {
+  
+  margin-top: 12rem!important;
+
+}
+
+.specify4 {
+
+  margin-top: 12rem!important;
+  
+}
+
+.specify5 {
+
+  margin-top: 12rem!important;
+}
+
+.description1 {
+  position: relative;
+  top: 22rem;
+  left: -1.8rem;
+}
+
+.description2 {
+  position: relative;
+  top: 34.44rem;
+  left: -1.8rem;
+}
+
+.description3 {
+  position: relative;
+  top: 34.44rem;
+  left: -1.8rem;
+}
+
+.description4 {
+  position: relative;
+  top: 35rem;
+  left: -1.8rem;
+}
+
+.description5 {
+  position: relative;
+  top: 34.44rem;
+  left: -1.8rem;
+}
+
+.description6 {
+  position: relative;
+  top: 34.44rem;
+  left: -1.8rem;
+}
+
+.information {
+ 
+  left: 52%;
+}
+
+h1.ofertas {
+ 
+  margin-left: 20%;
+}
+
+p.descriptionForm {
+ 
+  width: 78%;
+}
+}
+
+@media (min-width: 200px) and (max-width: 500px){
+  main {
+    height: 4021px;
+}
+
+.carousel-inner {
+  width: 103%!important;
+}
+
+.carousel-inner {
+
+  height: 12rem;
+}
+
+
+.formDescription {
+  
+  top: -161.2rem;
+  left: 5%;
+  width: 96%;
+  height: 247px;
+}
+
+.boxImg {
+  top: 36rem;
+}
+
+.w-100 {
+   
+  height: 17rem;
+}
+}
